@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Mahasiswa — Fakhri</title>
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+    }
+
+    body {
+      background-image: url('assets/background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0.22));
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 420px;
+      max-width: 92%;
+      padding: 44px 36px;
+      border-radius: 22px;
+
+      background: linear-gradient(180deg, #6f3bd1 0%, #4b2fb1 60%, #3a2a9a 100%);
+      color: #ffffff;
+      box-shadow:
+        0 10px 30px rgba(20,12,40,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+
+      border: 1px solid rgba(255,255,255,0.06);
+      text-align:center;
+    }
+
+    .card h1 {
+      margin: 0 0 26px 0;
+      font-size: 34px;
+      font-weight: 700;
+      text-shadow: 0 6px 20px rgba(10,6,30,0.45);
+    }
+
+    .info {
+      display:block;
+      margin: 12px 0;
+    }
+
+    .label {
+      display:block;
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 6px;
+      font-weight: 600;
+      text-shadow: 0 3px 8px rgba(10,6,30,0.35);
+    }
+
+    .value {
+      display:block;
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      text-shadow:
+        0 6px 18px rgba(10,6,30,0.45),
+        0 1px 0 rgba(255,255,255,0.02);
+    }
+
+    .nim .value { font-size: 44px; }
+
+    @media (max-width:480px) {
+      .card { padding: 28px 20px; border-radius: 16px; }
+      .card h1 { font-size: 22px; margin-bottom: 18px; }
+      .label { font-size: 14px; }
+      .value { font-size: 28px; }
+      .nim .value { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <main class="card">
+    <h1>Data Mahasiswa</h1>
+
+    <div class="info">
+      <div class="label">Nama:</div>
+      <div class="value">Fakhri</div>
+    </div>
+
+    <div class="info nim">
+      <div class="label">NIM:</div>
+      <div class="value">231103902</div>
+    </div>
+
+    <div class="info">
+      <div class="label">Angkatan:</div>
+      <div class="value">2023</div>
+    </div>
+  </main>
+</body>
+</html>
