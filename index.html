@@ -1,114 +1,120 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Data Mahasiswa — Fakhri</title>
-  <style>
-    html,body{
-      height:100%;
-      margin:0;
-    }
+<meta charset="UTF-8">
+<title>Fakhri Rizqi - NIM 231103902</title>
 
-    body {
-      background-image: url('assets/background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+<style>
+/* ======== Modern Dashboard Style ======== */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #eef1f7;
+    margin: 20px;
+    color: #333;
+}
 
-      font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
+h1 {
+    font-size: 28px;
+    color: #4b4ff7;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.12), rgba(0,0,0,0.22));
-      pointer-events: none;
-    }
+h2 {
+    margin-top: 40px;
+    color: #4b4ff7;
+    font-size: 22px;
+    border-left: 6px solid #7b5cff;
+    padding-left: 12px;
+    font-weight: 600;
+}
 
-    .card {
-      position: relative;
-      z-index: 2;
-      width: 420px;
-      max-width: 92%;
-      padding: 44px 36px;
-      border-radius: 22px;
+/* Container card */
+.table-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+}
 
-      background: linear-gradient(180deg, #6f3bd1 0%, #4b2fb1 60%, #3a2a9a 100%);
-      color: #ffffff;
-      box-shadow:
-        0 10px 30px rgba(20,12,40,0.45),
-        inset 0 1px 0 rgba(255,255,255,0.03);
+/* Modern Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-      border: 1px solid rgba(255,255,255,0.06);
-      text-align:center;
-    }
+th {
+    background: linear-gradient(90deg, #6d5dfc, #4b4ff7);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
 
-    .card h1 {
-      margin: 0 0 26px 0;
-      font-size: 34px;
-      font-weight: 700;
-      text-shadow: 0 6px 20px rgba(10,6,30,0.45);
-    }
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 14px;
+    background: #fff;
+    transition: background 0.2s ease;
+}
 
-    .info {
-      display:block;
-      margin: 12px 0;
-    }
+tr:hover td {
+    background: #f2f0ff;
+}
 
-    .label {
-      display:block;
-      font-size: 18px;
-      opacity: 0.95;
-      margin-bottom: 6px;
-      font-weight: 600;
-      text-shadow: 0 3px 8px rgba(10,6,30,0.35);
-    }
-
-    .value {
-      display:block;
-      font-size: 38px;
-      font-weight: 800;
-      letter-spacing: 0.6px;
-      text-shadow:
-        0 6px 18px rgba(10,6,30,0.45),
-        0 1px 0 rgba(255,255,255,0.02);
-    }
-
-    .nim .value { font-size: 44px; }
-
-    @media (max-width:480px) {
-      .card { padding: 28px 20px; border-radius: 16px; }
-      .card h1 { font-size: 22px; margin-bottom: 18px; }
-      .label { font-size: 14px; }
-      .value { font-size: 28px; }
-      .nim .value { font-size: 32px; }
-    }
-  </style>
+/* Zebra stripe */
+tr:nth-child(even) td {
+    background: #fafafe;
+}
+</style>
 </head>
 <body>
-  <div class="overlay"></div>
 
-  <main class="card">
-    <h1>Data Mahasiswa</h1>
+<h1>Nama: Fakhri Rizqi | NIM: 231103902</h1>
 
-    <div class="info">
-      <div class="label">Nama:</div>
-      <div class="value">Fakhri</div>
-    </div>
+<!-- Categories Card -->
+<div class="table-card">
+<h2>Categories</h2>
+<table>
+<tr><th>ID</th><th>Name</th><th>Description</th><th>Created</th><th>Modified</th></tr>
+<tr><td>1</td><td>Fashion</td><td>Category for anything related to fashion.</td><td>2014-06-01 00:35:07</td><td>2014-05-30 17:34:33</td></tr>
+<tr><td>2</td><td>Electronics</td><td>Gadgets, drones and more.</td><td>2014-06-01 00:35:07</td><td>2014-05-30 17:34:33</td></tr>
+<tr><td>3</td><td>Motors</td><td>Motor sports and more</td><td>2014-06-01 00:35:07</td><td>2014-05-30 17:34:54</td></tr>
+<tr><td>5</td><td>Movies</td><td>Movie products.</td><td>1970-01-01 00:00:00</td><td>2016-01-08 13:27:26</td></tr>
+<tr><td>6</td><td>Books</td><td>Kindle books, audio books and more.</td><td>1970-01-01 00:00:00</td><td>2016-01-08 13:27:47</td></tr>
+<tr><td>13</td><td>Sports</td><td>Drop into new winter gear.</td><td>2016-01-09 02:24:24</td><td>2016-01-09 01:24:24</td></tr>
+</table>
+</div>
 
-    <div class="info nim">
-      <div class="label">NIM:</div>
-      <div class="value">231103902</div>
-    </div>
+<!-- Products Card -->
+<div class="table-card">
+<h2>Products</h2>
+<table>
+<tr><th>ID</th><th>Name</th><th>Description</th><th>Price</th><th>Category ID</th><th>Created</th><th>Modified</th></tr>
+<tr><td>1</td><td>LG P880 4X HD</td><td>My first awesome phone!</td><td>336</td><td>3</td><td>2014-06-01 01:12:26</td><td>2014-05-31 17:12:26</td></tr>
+<tr><td>2</td><td>Google Nexus 4</td><td>The most awesome phone of 2013!</td><td>299</td><td>2</td><td>2014-06-01 01:12:26</td><td>2014-05-31 17:12:26</td></tr>
+<tr><td>3</td><td>Samsung Galaxy S4</td><td>How about no?</td><td>600</td><td>3</td><td>2014-06-01 01:12:26</td><td>2014-05-31 17:12:26</td></tr>
+<tr><td>6</td><td>Bench Shirt</td><td>The best shirt!</td><td>29</td><td>1</td><td>2014-06-01 01:12:26</td><td>2014-05-31 02:12:21</td></tr>
+<tr><td>7</td><td>Lenovo Laptop</td><td>My business partner.</td><td>399</td><td>2</td><td>2014-06-01 01:13:45</td><td>2014-05-31 02:13:39</td></tr>
+<tr><td>8</td><td>Samsung Galaxy Tab 10.1</td><td>Good tablet.</td><td>259</td><td>2</td><td>2014-06-01 01:14:13</td><td>2014-05-31 02:14:08</td></tr>
+<tr><td>9</td><td>Spalding Watch</td><td>My sports watch.</td><td>199</td><td>1</td><td>2014-06-01 01:18:36</td><td>2014-05-31 02:18:31</td></tr>
+<tr><td>10</td><td>Sony Smart Watch</td><td>The coolest smart watch!</td><td>300</td><td>2</td><td>2014-06-06 17:10:01</td><td>2014-06-05 18:09:51</td></tr>
+<tr><td>11</td><td>Huawei Y300</td><td>For testing purposes.</td><td>100</td><td>2</td><td>2014-06-06 17:11:04</td><td>2014-06-05 18:10:54</td></tr>
+<tr><td>12</td><td>Abercrombie Lake Arnold Shirt</td><td>Perfect as gift!</td><td>60</td><td>1</td><td>2014-06-06 17:12:21</td><td>2014-06-05 18:12:11</td></tr>
+<tr><td>13</td><td>Abercrombie Allen Brook Shirt</td><td>Cool red shirt!</td><td>70</td><td>1</td><td>2014-06-06 17:12:59</td><td>2014-06-05 18:12:49</td></tr>
+<tr><td>26</td><td>Another product</td><td>Awesome product!</td><td>555</td><td>2</td><td>2014-11-22 19:07:34</td><td>2014-11-21 20:07:34</td></tr>
+<tr><td>28</td><td>Wallet</td><td>You can absolutely use this one!</td><td>799</td><td>6</td><td>2014-12-04 21:12:03</td><td>2014-12-03 22:12:03</td></tr>
+<tr><td>31</td><td>Amanda Waller Shirt</td><td>New awesome shirt!</td><td>333</td><td>1</td><td>2014-12-13 00:52:54</td><td>2014-12-12 01:52:54</td></tr>
+<tr><td>42</td><td>Nike Shoes for Men</td><td>Nike Shoes</td><td>12999</td><td>3</td><td>2015-12-12 06:47:08</td><td>2015-12-12 05:47:08</td></tr>
+<tr><td>48</td><td>Bristol Shoes</td><td>Awesome shoes.</td><td>999</td><td>5</td><td>2016-01-08 06:36:37</td><td>2016-01-08 05:36:37</td></tr>
+<tr><td>60</td><td>Rolex Watch</td><td>Luxury watch.</td><td>25000</td><td>1</td><td>2016-01-11 15:46:02</td><td>2016-01-11 14:46:02</td></tr>
+</table>
+</div>
 
-    <div class="info">
-      <div class="label">Angkatan:</div>
-      <div class="value">2023</div>
-    </div>
-  </main>
 </body>
 </html>
